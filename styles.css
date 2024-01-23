@@ -1,0 +1,113 @@
+h1, h2, p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    font-size: 4em;
+    color: #ff6f69;
+  }
+  
+  h2 {
+    font-size: 3em;
+    color: #ffcc5c;
+  }
+  
+  p {
+    font-size: 2em;
+    color: #88d8b0;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  #primera {
+    background: #c06c84;
+  }
+  
+  #segunda {
+    background: #f8b195;
+  }
+  
+  #tercera {
+    background: #f67280;
+  }
+  
+  img {
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  footer {
+    background: #6c5b7b;
+    padding: 20px 0;
+    color: white;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f69;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('img/flowers.png'); 
+    background-size: cover;
+    animation: growFlowers 20s linear infinite;
+    opacity: 0.5; 
+  }
+  
+  @keyframes growFlowers {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3em;
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 1.5em;
+    }
+  
+    img {
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+  }
+  
